@@ -1,0 +1,220 @@
+/*Палітра основних кольорів*/
+/*Logo-blue color: #2196F3;*/
+/*Logo-black color: #000000;*/
+/*Logo-white color: #FFFFFF;*/
+/*h2-text color: #212121;*/
+/*p-text color: #757575;*/
+/*footer-header background: #2F303A;*/
+/*our team section background: #F5F4FA;*/
+:root {
+  --Logo-blue-color: #2196f3;
+  --Logo-black-color: #000000;
+  --Logo-white-color: #ffffff;
+  --h2-text-color: #212121;
+  --p-text-color: #757575;
+  --footer-header-background: #2f303a;
+  --our-team-background: #f5f4fa;
+}
+header {
+  background-color: var(--Logo-white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+main {
+  font-family: Roboto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h2 {
+  color: var(--h2-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+footer {
+  background-color: var(--footer-header-background);
+}
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+/*Logo style*/
+p.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+p.logo-portfolio {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+p.logodown {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+span.logo-blue {
+  color: var(--Logo-blue-color);
+}
+span.logo-black {
+  color: var(--Logo-black-color);
+}
+span.logo-white {
+  color: var(--Logo-white-color);
+}
+.list > a {
+  color: var(--h2-text-color);
+}
+.list > a:hover,
+.list > a:focus {
+  color: var(--Logo-blue-color);
+}
+.list-contacts > a {
+  color: var(--p-text-color);
+}
+.list-contacts > a:hover,
+.list-contacts > a:focus {
+  color: var(--Logo-blue-color);
+}
+.hero {
+  background-color: var(--footer-header-background);
+  font-family: Roboto;
+}
+.hero > h1 {
+  color: var(--Logo-white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  background-color: var(--Logo-blue-color);
+  color: var(--Logo-white-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:hover {
+  background-color: var(--Logo-white-color);
+  color: var(--Logo-blue-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.advantage > h3 {
+  color: var(--h2-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage p {
+  color: var(--p-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.team {
+  background-color: var(--our-team-background);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team h3 {
+  color: var(--h2-text-color);
+}
+.team p {
+  color: var(--p-text-color);
+}
+.adr span {
+  color: var(--Logo-white-color);
+}
+.adr a {
+  color: rgba(255, 255, 255, 0.6);
+}
+a.active-link {
+  color: var(--Logo-blue-color);
+}
+button.filter {
+  color: var(--h2-text-color);
+  background-color: var(--our-team-background);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+button.filter:hover,
+button.active:focus {
+  color: var(--Logo-white-color);
+  background-color: var(--Logo-blue-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+h2.img-head {
+  color: var(--h2-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+p.img-p {
+  color: var(--p-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
