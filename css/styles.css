@@ -35,12 +35,16 @@ a {
 }
 ul {
   list-style: none;
+  padding-left: 0;
 }
 h1 {
   margin-top: 0;
   margin-bottom: 0;
 }
 h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--h2-text-color);
   font-style: normal;
   font-weight: bold;
@@ -49,6 +53,11 @@ h2 {
   letter-spacing: 0.03em;
 }
 footer {
+  display: flex;
+  max-width: 1600px;
+  min-height: 252px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--footer-header-background);
 }
 address {
@@ -81,6 +90,7 @@ p.logo-portfolio {
   letter-spacing: 0.03em;
 }
 p.logodown {
+  margin: 0px, 0px, 20px, 0px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -140,6 +150,7 @@ nav {
 .nav-block li:not(:last-child) {
   margin-right: 50px;
 }
+/* Оформлення ГЕРОЯ*/
 .hero {
   display: flex;
   flex-direction: column;
@@ -189,7 +200,11 @@ nav {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.advantage > h3 {
+/*Оформлення ПЕРЕВАГИ*/
+.advantage h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--h2-text-color);
   font-style: normal;
   font-weight: bold;
@@ -199,6 +214,9 @@ nav {
   text-transform: uppercase;
 }
 .advantage p {
+  max-width: 270px;
+  margin: 0;
+
   color: var(--p-text-color);
   font-style: normal;
   font-weight: normal;
@@ -206,7 +224,44 @@ nav {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
+.advantage ul {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 0;
+  justify-content: space-between;
+}
+/* Оформлення ЧИМ МИ ЗАЙМАЄМОСЯ */
+.wedo {
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+.wedo > h2 {
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 0px;
+}
+.wedo-img a {
+  display: block;
+  margin-bottom: 0px;
+}
+.wedo-img {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+/* Оформлення Наша Команда*/
 .team {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 94px;
+  max-width: 1600px;
+  max-height: 648px;
+
   background-color: var(--our-team-background);
   font-style: normal;
   font-weight: 500;
@@ -215,17 +270,85 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team > h2 {
+  margin-top: 94px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team > ul {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.team li {
+  max-width: 270px;
+  max-height: 368px;
+
+  background-color: var(--Logo-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team li:not(:last-child) {
+  margin-right: 30px;
+}
 .team h3 {
+  margin-top: 30px;
+  margin-bottom: 0px;
   color: var(--h2-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team p {
+  margin-top: 10px;
   color: var(--p-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*Елементи підвалу*/
+footer > a > p {
+  margin-top: 0;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 215px;
 }
 .adr span {
+  margin-bottom: 9px;
   color: var(--Logo-white-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
 }
 .adr a {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 a.active-link {
   color: var(--Logo-blue-color);
