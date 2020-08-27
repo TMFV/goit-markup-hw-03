@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <!--Connect stylesheet file-->
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="container">
       <!-- Main navigation block -->
       <nav>
         <!--Logo links in the header-->
@@ -26,29 +26,25 @@
           </p>
         </a>
         <!--Navigation list links in header-->
-        <ul>
+        <ul class="nav-block">
           <li class="list"><a class="active-link" href="./">Студия</a></li>
           <li class="list"><a href="./portfolio.html">Портфолио</a></li>
           <li class="list"><a href="">Контакты</a></li>
         </ul>
       </nav>
       <!--Contacts links list in the header-->
-      <ul>
+      <ul class="ul-contacts">
         <li class="list-contacts">
-          <a href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
+          <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
         </li>
         <li class="list-contacts">
-          <a href="tel:+380961111111">
-            +38 096 111 11 11
-          </a>
+          <a href="tel:+380961111111"> +38 096 111 11 11 </a>
         </li>
       </ul>
     </header>
     <main>
       <!--Hero block div, image and section (text and button)-->
-      <div>
+      <div class="hero-div">
         <section class="hero">
           <h1>
             Эффективные решения <br />
@@ -158,13 +154,9 @@
       </a>
       <address class="adr">
         <span>г. Киев, Бульвар Леси Украинки, 26</span> <br />
-        <a href="mailto:info@example.com">
-          info@example.com
-        </a>
+        <a href="mailto:info@example.com"> info@example.com </a>
         <br />
-        <a href="tel:+380991111111">
-          +38 099 111 11 11
-        </a>
+        <a href="tel:+380991111111"> +38 099 111 11 11 </a>
       </address>
     </footer>
   </body>
