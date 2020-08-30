@@ -175,7 +175,6 @@ header > div {
   align-items: center;
   padding-top: 184px;
   padding-bottom: 184px;
-  /*height: 600px;*/
   background-color: var(--footer-header-background);
   font-family: Roboto;
 }
