@@ -178,6 +178,8 @@ header > div {
   background-color: var(--footer-header-background);
   font-family: Roboto;
 }
+.hero-section {
+}
 .hero > h1 {
   color: var(--Logo-white-color);
   font-family: Roboto;
@@ -217,11 +219,11 @@ header > div {
 }
 /*Оформлення ПЕРЕВАГИ*/
 .advantage {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .advantage h3 {
   margin-top: 0;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   color: var(--h2-text-color);
   font-style: normal;
   font-weight: bold;
@@ -247,13 +249,16 @@ header > div {
   justify-content: space-between;
 }
 /* Оформлення ЧИМ МИ ЗАЙМАЄМОСЯ */
+.section-wedo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .wedo {
   flex-direction: column;
   margin-bottom: 0px;
 }
 .wedo > h2 {
   text-align: center;
-  margin-top: 94px;
   margin-bottom: 0px;
 }
 .wedo-img a {
@@ -271,10 +276,9 @@ header > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 94px;
   padding-top: 99px;
   padding-bottom: 47px;
-  /*max-height: 648px;*/
+
   background-color: var(--our-team-background);
   font-style: normal;
   font-weight: 500;
