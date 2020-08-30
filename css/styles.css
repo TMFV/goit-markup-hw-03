@@ -15,8 +15,7 @@
   --footer-header-background: #2f303a;
   --our-team-background: #f5f4fa;
 }
-header {
-  display: flex;
+header > div {
   align-items: center;
 
   background-color: var(--Logo-white-color);
@@ -53,14 +52,6 @@ h2 {
   letter-spacing: 0.03em;
 }
 footer {
-  display: flex;
-  box-sizing: content-box;
-  max-width: 1200px;
-  min-height: 252px;
-  padding-left: 200px;
-  padding-right: 200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--footer-header-background);
 }
 address {
@@ -116,6 +107,7 @@ nav {
 }
 /*Загальні параметри контейнера для макета*/
 .container {
+  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -123,12 +115,26 @@ nav {
   margin-right: auto;
 }
 .container-head {
+  display: flex;
   box-sizing: content-box;
-  width: 1200px;
-  padding-left: 200px;
-  paddin-right: 200px;
+  align-items: center;
+  width: 1170px;
+  padding-left: 215px;
+  padding-right: 215px;
   margin-left: auto;
   margin-right: auto;
+}
+header > div {
+  align-items: center;
+  max-height: 80px;
+
+  background-color: var(--Logo-white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .list > a {
   color: var(--h2-text-color);
@@ -164,16 +170,12 @@ nav {
 /* Оформлення ГЕРОЯ*/
 .hero {
   display: flex;
-  box-sizing: content-box;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1200px;
-  height: 600px;
-  padding-left: 200px;
-  padding-right: 200px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 184px;
+  padding-bottom: 184px;
+  /*height: 600px;*/
   background-color: var(--footer-header-background);
   font-family: Roboto;
 }
@@ -215,10 +217,12 @@ nav {
   letter-spacing: 0.06em;
 }
 /*Оформлення ПЕРЕВАГИ*/
+.advantage {
+  margin-top: 94px;
+}
 .advantage h3 {
   margin-top: 0;
   margin-bottom: 10px;
-
   color: var(--h2-text-color);
   font-style: normal;
   font-weight: bold;
@@ -240,7 +244,6 @@ nav {
 }
 .advantage ul {
   display: flex;
-  margin-top: 94px;
   margin-bottom: 0;
   justify-content: space-between;
 }
@@ -266,19 +269,13 @@ nav {
 }
 /* Оформлення Наша Команда*/
 .team {
-  display: flex;
-  box-sizing: content-box;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   align-items: center;
   margin-top: 94px;
-  max-width: 1200px;
-  max-height: 648px;
-  padding-left: 200px;
-  padding-right: 200px;
-
+  padding-top: 99px;
+  padding-bottom: 47px;
+  /*max-height: 648px;*/
   background-color: var(--our-team-background);
   font-style: normal;
   font-weight: 500;
@@ -288,7 +285,6 @@ nav {
   letter-spacing: 0.03em;
 }
 .team > h2 {
-  margin-top: 94px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -298,8 +294,10 @@ nav {
 }
 .team > ul {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 96px;
+  padding-top: 50px;
+  padding-bottom: 47px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -317,7 +315,9 @@ nav {
   margin-right: 30px;
 }
 .team h3 {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  margin-top: 0px;
   margin-bottom: 0px;
   color: var(--h2-text-color);
   font-style: normal;
@@ -328,7 +328,11 @@ nav {
   letter-spacing: 0.03em;
 }
 .team p {
-  margin-top: 10px;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: var(--p-text-color);
   font-style: normal;
   font-weight: normal;
@@ -338,14 +342,16 @@ nav {
   letter-spacing: 0.03em;
 }
 /*Елементи підвалу*/
+.down-page {
+  flex-direction: column;
+  align-items: flex-start;
+}
 footer > a > p {
   margin-top: 0;
 }
 footer > div {
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  margin-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .adr span {
   margin-bottom: 9px;
@@ -420,6 +426,10 @@ p.img-p {
 .no-display {
   display: none;
 }
+.zero {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 .search-menu {
   display: flex;
   justify-content: center;
@@ -430,7 +440,6 @@ p.img-p {
   margin-right: 8px;
 }
 .portfolio-content {
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -439,11 +448,14 @@ p.img-p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 .portfolio-projects > li {
   box-sizing: border-box;
   max-width: 370px;
   max-height: 404px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   border-style: solid;
   border-width: 1px;
   border-color: #eeeeee;
@@ -458,10 +470,15 @@ p.img-p {
   margin-right: 30px;
 }
 .portfolio-projects > li > a > h2 {
+  box-sizing: border-box;
   margin-left: 24px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .portfolio-projects > li > a > p {
+  box-sizing: border-box;
   margin-left: 24px;
-  margin-top: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 4px;
+  padding-bottom: 20px;
 }

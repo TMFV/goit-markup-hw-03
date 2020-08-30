@@ -15,37 +15,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container">
+    <header>
       <!-- Main navigation block -->
-      <nav>
-        <!--Logo links in the header-->
-        <a href="./">
-          <p class="logo-portfolio">
-            <span class="logo-blue">Web</span
-            ><span class="logo-black">Studio</span>
-          </p>
-        </a>
-        <!--Navigation list links in header-->
-        <ul class="nav-block">
-          <li class="list"><a href="./">Студия</a></li>
-          <li class="list">
-            <a class="active-link" href="./portfolio.html">Портфолио</a>
+      <div class="container">
+        <nav>
+          <!--Logo links in the header-->
+          <a href="./">
+            <p class="logo-portfolio">
+              <span class="logo-blue">Web</span
+              ><span class="logo-black">Studio</span>
+            </p>
+          </a>
+          <!--Navigation list links in header-->
+          <ul class="nav-block">
+            <li class="list"><a href="./">Студия</a></li>
+            <li class="list">
+              <a class="active-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="list"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <!--Contacts links list in the header-->
+        <ul class="ul-contacts">
+          <li class="list-contacts">
+            <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
           </li>
-          <li class="list"><a href="">Контакты</a></li>
+          <li class="list-contacts">
+            <a href="tel:+380961111111"> +38 096 111 11 11 </a>
+          </li>
         </ul>
-      </nav>
-      <!--Contacts links list in the header-->
-      <ul class="ul-contacts">
-        <li class="list-contacts">
-          <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
-        </li>
-        <li class="list-contacts">
-          <a href="tel:+380961111111"> +38 096 111 11 11 </a>
-        </li>
-      </ul>
+      </div>
     </header>
     <hr
-      class="container-head"
+      class="container-head zero"
       align="center"
       width="100%"
       size="1"
@@ -162,7 +164,7 @@
     </main>
     <footer>
       <!--Logo links in the header-->
-      <div>
+      <div class="container-head down-page">
         <a href="./">
           <p class="logodown">
             <span class="logo-blue">Web</span
@@ -173,7 +175,7 @@
           <span>г. Киев, Бульвар Леси Украинки, 26</span> <br />
           <a href="mailto:info@example.com"> info@example.com </a>
           <br />
-          <a href="tel:++++++79212285443"> +38 099 111 11 11 </a>
+          <a href="tel:++++++++79212285443"> +38 099 111 11 11 </a>
         </address>
       </div>
     </footer>
