@@ -51,16 +51,6 @@ h2 {
   line-height: 42px;
   letter-spacing: 0.03em;
 }
-footer {
-  background-color: var(--footer-header-background);
-}
-address {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
 /*Logo style*/
 nav > a {
   display: block;
@@ -111,16 +101,6 @@ nav {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container-head {
-  display: flex;
-  box-sizing: content-box;
-  align-items: center;
-  width: 1170px;
-  padding-left: 215px;
-  padding-right: 215px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -273,14 +253,16 @@ header > div {
   margin-bottom: 0px;
 }
 /* Оформлення Наша Команда*/
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--our-team-background);
+}
 .team {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 99px;
-  padding-bottom: 47px;
 
-  background-color: var(--our-team-background);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -289,6 +271,7 @@ header > div {
   letter-spacing: 0.03em;
 }
 .team > h2 {
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -298,8 +281,6 @@ header > div {
 }
 .team > ul {
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 47px;
   margin-bottom: 0px;
   margin-top: 0px;
   margin-left: auto;
@@ -320,9 +301,8 @@ header > div {
 }
 .team h3 {
   padding-top: 30px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 0px;
-  margin-bottom: 0px;
   color: var(--h2-text-color);
   font-style: normal;
   font-weight: 500;
@@ -333,7 +313,6 @@ header > div {
 }
 .team p {
   box-sizing: border-box;
-  padding-top: 5px;
   padding-bottom: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -346,6 +325,18 @@ header > div {
   letter-spacing: 0.03em;
 }
 /*Елементи підвалу*/
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-header-background);
+}
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
 .down-page {
   flex-direction: column;
   align-items: flex-start;
@@ -353,10 +344,7 @@ header > div {
 footer > a > p {
   margin-top: 0;
 }
-footer > div {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .adr span {
   margin-bottom: 9px;
   color: var(--Logo-white-color);
@@ -443,6 +431,10 @@ p.img-p {
 .search-menu > li:not(:last-child) {
   margin-right: 8px;
 }
+.portfolio-section {
+  margin-top: 0px;
+  margin-bottom: 101px;
+}
 .portfolio-content {
   flex-direction: column;
   justify-content: center;
@@ -467,15 +459,13 @@ p.img-p {
 .portfolio-projects > li:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.portfolio-projects > li:nth-last-child(-n + 3) {
-  margin-bottom: 101px;
-}
 .portfolio-projects > li:not(:nth-child(3n + 0)) {
   margin-right: 30px;
 }
 .portfolio-projects > li > a > h2 {
   box-sizing: border-box;
   margin-left: 24px;
+  margin-bottom: 4px;
   padding-top: 20px;
 }
 .portfolio-projects > li > a > p {
@@ -483,6 +473,5 @@ p.img-p {
   margin-left: 24px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 4px;
   padding-bottom: 20px;
 }
