@@ -173,12 +173,13 @@ header > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 184px;
-  padding-bottom: 184px;
-  background-color: var(--footer-header-background);
+
   font-family: Roboto;
 }
 .hero-section {
+  padding-top: 184px;
+  padding-bottom: 184px;
+  background-color: var(--footer-header-background);
 }
 .hero > h1 {
   color: var(--Logo-white-color);
